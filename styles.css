@@ -118,3 +118,17 @@ footer.foot{border-top:1px solid var(--line);padding:40px 0;background:var(--sur
 .band{background:linear-gradient(135deg,#093F36,#0F6B5C 60%,#13806C)}
 .hero .ledger{color:var(--ink)}.hero .ledger .small{color:var(--soft)}
 .fx .split.wrap{margin-left:auto;margin-right:auto}
+
+
+/* Service imagery refresh - isolated preview branch */
+.service-tiles .tile{padding:0 0 24px;display:flex;flex-direction:column;align-items:flex-start;min-height:100%;isolation:isolate}
+.service-tiles .service-image{display:block;width:100%;height:178px;object-fit:cover;background:#e7eeea;border:0;border-radius:16px 16px 0 0;margin:0 0 20px}
+.service-tiles .ico,.service-tiles h3,.service-tiles p,.service-tiles .go{margin-left:24px;margin-right:24px}
+.service-tiles .ico{margin-bottom:12px}
+.service-tiles p{flex:1}
+.service-tiles .go{margin-top:4px}
+.service-tiles .tile::after{top:152px;right:-42px;width:96px;height:96px;z-index:-1}
+.service-tiles .tile:hover .service-image{filter:saturate(1.08)}
+.service-note{margin:24px 0 0;color:var(--soft);max-width:76ch}
+.service-note a{font-weight:700}
+@media(max-width:560px){.service-tiles .service-image{height:190px}.service-tiles .tile{padding-bottom:22px}.service-tiles .ico,.service-tiles h3,.service-tiles p,.service-tiles .go{margin-left:20px;margin-right:20px}}
